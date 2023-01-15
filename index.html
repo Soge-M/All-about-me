@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="https://fonts.google.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="images/listya.ico" >
-    <meta charset="utf-8">
-    <title>All about me</title>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <title> Psychology </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/header.css">
+    <link rel="stylesheet" href="styles/css/base.css">
+    <link rel="stylesheet" href="styles/css/main/cutaway.css">
+    <link rel="stylesheet" href="styles/css/main/consultations.css">
+    <link rel="stylesheet" href="styles/css/popup.css">
+</head>
+<body class = 'wrapper'>
+    <header>
+        <div class="wrapperedcontainer">
+            <div class="navbar">
+                <div class="navbar__icon"></div>
+                <div class="navbar__list">
+                    <a class="navbar__list__item_1">О проекте</a>
+                    <a class="navbar__list__item_2">Блог</a>
+                    <a class="navbar__list__item_3">Контакты</a>
+                    <a class="navbar__list__item_4">Квалификация</a>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
-      <article>
-        <section id="about_me">
-          <h1> All about me </h1>
-          <img id="usopp" src="images/usopp.jpg" alt="Божественное создание, имя которого Бог-Усопп">
-          <h2> Не поверите, но тут все обо мне </h2>
-          <p> 
-              Меня зовут <strong>Миша</strong> (ФИО Съедин Михаил Романович). На тот момент, когда я пишу
-            этот текст мне всего навсего <strong>18 лет</strong>. Я меломан и мне нравится совсем разная
-            музыка, кст да вы можете послушать ее <a target="_blank" title="Мой плейлист в Яндекс Музыке"
-            href="https://music.yandex.ru/users/sjedinmihail/playlists/3"> тут </a>. Совсем не давно
-            я стал студентом первого курса <strong>МТУСИ</strong>. Поступил на направление 
-            <em>Автоматизация процессов и производст</em>. Подружился с некоторыми одногруппниками. 
-            У меня есть девушка <strong>Даша</strong>. Она невероятно <em>умна, добра, внимательна ко мне</em>. Ради себя и нее я я хочу стать <em>лучше</em>. 
-            Я не хочу нуждаться в обеспечении со стороны родителей, поэтому я хочу научиться 
-            программировать сайты. 
-          </p>
+        <section class="cutaway">
+            <div class="container">
+                <div class="ImgGallety"></div>
+                <div class="tag-list">
+                    <button class="tag-list__item tag-list__item_active">#отношения</button>
+                    <button class="tag-list__item">#карьера</button>
+                    <button class="tag-list__item">#любовь к себе</button>
+                    <button class="tag-list__item">#переезд</button>
+                </div>
+            </div>
         </section>
-        <section>
-          <h6 id = smile>Приветик</h6>
+        <section class="consultations">
+            <div class="container">
+                <h2>Провожу консультации</h2>
+                <div class="apointment">
+                    <div class="apointment__item">
+                        <h3>В Санкт-Петербурге</h3>
+                        <p>Консультация вживую</p>
+                        <a>Записаться</a>
+                    </div>
+                    <div class="apointment__item">
+                        <h3>Онлайн</h3>
+                        <p>Консультация по видеосвязи</p>
+                        <a class="popup-link" href="#popup">Записаться</a>
+                    </div>
+                    <div class="apointment__item">
+                        <h3>По переписке</h3>
+                        <p>Консультация в любом удобном, для вас чате</p>
+                        <a>Записаться</a>
+                    </div>
+                </div>
+            </div>
         </section>
-         <!--Это мой первый комм)-->
-      </article>
-      <nav>
-        <h2> My hobbies</h2>
-        <ul>
-          <li> <a class="a_li" title="Здесь немного о моем опыте в IT" target="_blank" href="links/IT.html"><strong>IT</strong></a> </li>
-          <li> <a class="a_li" title="Здесь я рассказюваю о интересных местах для прогулок" target="_blank" href="links/Strolls.html"><strong>Strolls</strong></a> </li> 
-          <li> <strong>Аниме</strong> </li> 
-          <li> <strong>Игры</strong> </li> 
-        </ul>
-      </nav>
-      <button>Change user</button>
     </main>
-    <hr>
     <footer>
-      Контактные данные:<br>
-      Тел: +7(993)552-30-95 <br>
-      Почта: <a href="mailto: sedmiro@gmail.com?subject=Mail%20from%20site&" >sedmiro@gmail.com</a>
     </footer>
-    <script src="scripts/main.js"></script>
-  </body>
-</html> 
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" class="popup__close"></a>
+                <div class="popup__title">Записаться на онлайн консультацию</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/popup.js"></script>
+</body>
+</html>
